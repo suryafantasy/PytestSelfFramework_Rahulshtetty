@@ -22,7 +22,7 @@ class TestOne(BaseClass): #passing parent class here so that no need to use fixt
         #products_list = self.driver.find_elements(By.XPATH, "//div/h4[@class='product-name']")
         for product in products_list:
             actual_list.append(product.text)
-        print(actual_list)
+        #print(actual_list)
 
         list_carts = self.driver.find_elements(By.XPATH, "//button[text()='ADD TO CART']")
         leng = len(list_carts)
